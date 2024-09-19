@@ -1,0 +1,99 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MaterialApp(home: MyApp()));
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        width: 500,
+        height: 500,
+        child: Column(
+          children: [
+            Container(
+              height: 250,
+              child: Row(
+                children: [
+                  Container(
+                    width: 250,
+                    child: Image.asset('lib/Images/One.jpg', fit: BoxFit.cover),
+                  ),
+                  Container(
+                    width: 250,
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 125,
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 125,
+                                child: Image.asset('lib/Images/TWO.jpg', fit: BoxFit.cover),
+                              ),
+                              Container(
+                                width: 125,
+                                child: Image.asset('lib/Images/THREE.jpg', fit: BoxFit.cover),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: 125,
+                          child: Image.asset('lib/Images/FOUR.jpg', fit: BoxFit.fill),
+                          width: 250,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              height: 250,
+              child: Row(
+                children: [
+                  Container(
+                    width: 250,
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 125,
+                          child: Image.asset('lib/Images/FIVE.jpg', fit: BoxFit.fill),
+                          width: 250, 
+                        ),
+                        Container(
+                          height: 125,
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 125,
+                                child: Image.asset('lib/Images/SIX.jpg', fit: BoxFit.cover),
+                              ),
+                              Container(
+                                width: 125,
+                                child: Image.asset('lib/Images/SEVEN.jpg', fit: BoxFit.cover),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: 250,
+                    child: Image.asset('lib/Images/EIGHT.jpg', fit: BoxFit.cover),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
